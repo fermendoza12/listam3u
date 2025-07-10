@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi Catálogo IPTV</title>
+<style>
+body {
+background-color: #121212;
+color: #f1f1f1;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+}
+
+h1 {
+text-align: center;
+color: #ffa500;
+margin-bottom: 30px;
+}
+
+.catalogo {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 20px;
+margin: 0 auto;
+max-width: 1200px;
+}
+
+.pelicula {
+background-color: #1e1e1e;
+border: 1px solid #333;
+border-radius: 10px;
+overflow: hidden;
+text-align: center;
+padding: 10px;
+}
+
+.pelicula img {
+width: 100%;
+height: auto;
+border-radius: 6px;
+}
+
+.pelicula h2 {
+font-size: 16px;
+margin: 10px 0 5px;
+}
+
+.pelicula a {
+display: inline-block;
+margin-top: 8px;
+padding: 6px 12px;
+background-color: #ffa500;
+color: #000;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+}
+
+.pelicula a:hover {
+background-color: #ffc14d;
+}
+
+.footer {
+text-align: center;
+margin-top: 40px;
+font-size: 14px;
+color: #aaa;
+}
+
+.footer a {
+color: #ffa500;
+text-decoration: none;
+}
+</style>
 </head>
 <body>
-    
+
+<h1>🎬 Mi lista IPTV casera</h1>
+
+<div class="catalogo">
+<div class="pelicula">
+<img src="https://i.imgur.com/zYQ6YcL.jpg" alt="El hombre lobo">
+<h2>El hombre lobo (2023)</h2>
+<a href="https://streamtape.com/e/kWK3Rlzag8tO1Kj/" target="_blank">Ver</a>
+</div>
+
+<div class="pelicula">
+<img src="https://i.imgur.com/5xHJkGq.jpg" alt="Operación Relámpago">
+<h2>Operación Relámpago (2021)</h2>
+<a href="https://streamtape.com/e/abc123operacionrelampago/" target="_blank">Ver</a>
+</div>
+
+<div class="pelicula">
+<img src="https://i.imgur.com/6EYOVnL.jpg" alt="Amor con Papas Fritas">
+<h2>Amor con Papas Fritas (2022)</h2>
+<a href="https://streamtape.com/e/comedia987papasfritas/" target="_blank">Ver</a>
+</div>
+</div>
+
+<div class="footer">
+📥 Lista IPTV: <a href="peliculas.m3u" download>Descargar .m3u</a>
+</div>
+
 </body>
 </html>
